@@ -3,7 +3,10 @@
 ## My Portfolio
 As I have already made a portfilio(seen below) That I am very happy with and would like to continue to use professionally.
 https://zoesobowale.github.io/
+
 I decided to try and match the demo with my own style using similar colours like my own website and just using placeholder text for the most part.
+Here is the Task Deployment
+https://zoesobowale.github.io/Challenge-2--Advanced-Css/
 
 ## The Task
 
