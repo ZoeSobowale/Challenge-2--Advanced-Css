@@ -1,23 +1,292 @@
+/* Universal */
+:root {
+  --background-color: #FEFBFE;
+  --text-color: #001021;
+  --text-font: "League Spartan", Arial, sans-serif;
+}
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  background-color: var(--background-color);
+  display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+/* Text Styles */
+nav a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.text p {
+  margin: 10px;
 }
 
 p {
-  margin: 0;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  font-family: var(--text-font);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+  background: lightblue;
+  min-width: fit-content;
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: var(--text-font);
+  font-size: 20px;
+  clear: both;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/* Hero Div with Background Image */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 30vh;
+  background-image: url("/starter/images/IMG-20230225-WA0026.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+.profile-pic {
+  border: 4px solid var(--text-color);
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  margin: 20px;
+}
+
+/* Main */
+main {
+  display: block;
+  margin: auto;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+.section .about-me {
+  order: 1;
+}
+
+#about-me .text {
+  order: 2;
+}
+
+/* About Me */
+
+h3 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.about-me,
+.contact,
+.work {
+  width: 100%;
+  border-bottom: 4px solid var(--text-color);
+}
+
+.personal-info {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.personal-info a {
+  color: black;
+  font-size: 16px;
+}
+
+#Contact-Me .personal-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  margin: 10px;
+  border: 5px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-bottom: 10px;
+  flex-grow: 1;
+  flex-basis: 18em;
+  min-height: 150px;
+  box-shadow: 10px 5px 10px rgba(0,0,0,.2);
+}
+
+.box p {
+  display: flex;
+  color: black;
+  padding: 5px;
+  min-width: fit-content;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding-bottom: 5%;
+  margin: 10px;
+
+  min-width: 100px;
+  min-height: 175px;
+  flex-basis: 100%;
+  border: 5px solid #fff;
+  box-shadow: 10px 5px 10px rgba(0,0,0,.2);
+}
+
+.main-box p {
+  width: 200px;
+  color: black;
+  background: #fff;
+  padding: 5px;
+}
+
+.label-bg {
+  background: #fff;
+  width: 160px;
+}
+
+.box p:nth-child(1),
+.main-box p:nth-child(1) {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.image-1 {
+  background-image: url("./images/gameshare.png");
+  background-size: cover;
+  background-position: center;
+}
+.image-2 {
+  background-image: url("./images/SongSensei.png");
+  background-size: cover;
+  background-position: center;
+}
+.image-3 {
+  background-image: url("./images/02-portfolio-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-4 {
+  background-image: url("./images/02-portfolio-4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.image-5 {
+  background-image: url("./images/eventfull_logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Medium screen devices (768px and above) */
+@media screen and (min-width: 768px) {
+  
+  .hero {
+    justify-content: start;
+  }
+  
+  
+  .about-me,
+  .contact,
+  .work {
+    border-bottom: 0;
+    flex: 2 1 100px;
+  }
+  .section {
+    flex-direction: row;
+    align-items: start;
+  }
+  
+  h3 {
+    width: 170px;
+    font-size: 36px;
+    text-align: end;
+    padding: 10px;
+  }
+  
+  main {
+    width: 80%;
+    margin: auto;
+  }
+  
+  #about-me .text,
+  .img-container,
+  .personal-info {
+    border-left: 5px solid var(--text-color);
+    ;
+  }
+  
+  
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  .main-box {
+    min-width: 300px;
+    min-height: 300px
+  }
+  .box {
+    flex-basis: 15em;
+  }
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .main-box {
+    min-width: 300px;
+    min-height: 300px
+  }
+  .box {
+    flex-basis: 18em;
+  }
 }

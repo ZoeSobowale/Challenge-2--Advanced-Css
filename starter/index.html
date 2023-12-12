@@ -5,41 +5,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Zoe Sobowale // Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1>Zoe Sobowale</h1>
     <nav>
+      <ul>
+        <li><a href="#about-me"> About Me</a></li>
+        <li><a href="#work"> Work</a></li>
+        <li><a href="#contact"> Contact Me</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+      <img src="./images/IMG-20230225-WA0026.jpg" alt="Picture of Zoe Sobowale">
+  </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
-    </section>
+    <section id="about-me" class="about-me">
+      <div class="title">
+          <h2>About Me</h2>
+      </div>
+      
+      <div>
+          <p>
+            I'm a recent Computer Science graduate and freelance web developer, specializing in front-end development.
+            I'm passionate about crafting exceptional web experiences and eager to transition into a full-time role. 
+            Let's connect and build something amazing together!
+          </p>
+      </div>
+  </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <section id="work" class="work">
+      <div class="title"><h2>My Work</h2></div>
+      <figure>
+        <figcaption>Module 1 Challenge</figcaption>
+        <img src="./assets/images/h1.png" alt="image of first assignment" />
+        <img src="./assets/images/2.png" alt="Image of first assignment" />
+        <figcaption class="p2">Project 2 (Streemy)</figcaption>
+        <img class="p2" src="./assets/images/3.gif" alt="Project 2 GIF" />
+        <figcaption class="p2">Project 3 (Fishermans Hook)</figcaption>
+        <img class="p2" src="./assets/images/r4.gif" alt="Project 3 GIF" />
+      </figure>
+    </div>
+  </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
+    <section id="contact">
+      <div class="contact">
+          <h2>Contact Me</h2>
+          <ul>
+              <li><a href="zoesobowale@gmail.com">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/zoe-sobowale/">LinkedIn</a></li>
+              <li><a href="https://github.com/ZoeSobowale">GitHub</a></li>
+          </ul>
+      </div>
+  </section>
+
+</main>
 </body>
 
 </html>
